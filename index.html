@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QRAlimy | Digital Business Cards</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">QRAlimy</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <h2>Create Your Smart Business Card</h2>
+      <p>Easily share your contact details using digital business cards powered by QR codes.</p>
+      <button id="learnMoreBtn" class="btn-primary">Learn More</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2>Why Choose QRAlimy?</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Customizable</h3>
+          <p>Create unique designs for your digital business card.</p>
+        </div>
+        <div class="card">
+          <h3>Mobile Ready</h3>
+          <p>Perfectly optimized for smartphones and tablets.</p>
+        </div>
+        <div class="card">
+          <h3>Share Instantly</h3>
+          <p>Send your business info with a single scan.</p>
+        </div>
+      </div>
+      <div id="extraInfo" class="hidden extra-info">
+        <p>Our service helps modern professionals connect instantly without sharing paper cards. Just scan and save!</p>
+      </div>
+      <button id="toggleExtra" class="btn-secondary">Show More</button>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section id="demo" class="form-section">
+    <div class="container">
+      <h2>Try It Out</h2>
+      <p>Enter your name and parking spot below:</p>
+      <form id="parkingForm" action="form-handler.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="spot">Parking Spot:</label>
+        <input type="text" id="spot" name="spot" required />
+
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+
+      <div id="responseMessage"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 QRAlimy. Built with care by PARTH BHATIA  </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>
