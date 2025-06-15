@@ -1,90 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QRAlimy | Digital Business Cards</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRAlimy - Secure Car Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">QRAlimy</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#demo">Demo</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-content">
-      <h2>Create Your Smart Business Card</h2>
-      <p>Easily share your contact details using digital business cards powered by QR codes.</p>
-      <button id="learnMoreBtn" class="btn-primary">Learn More</button>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="features-section">
-    <div class="container">
-      <h2>Why Choose QRAlimy?</h2>
-      <div class="feature-cards">
-        <div class="card">
-          <h3>Customizable</h3>
-          <p>Create unique designs for your digital business card.</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="QRAlimy Logo">
+                <h1>QRAlimy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn btn-primary">Get Started</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        <div class="card">
-          <h3>Mobile Ready</h3>
-          <p>Perfectly optimized for smartphones and tablets.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Keep Your Phone Number Private</h2>
+                    <p>QRAlimy replaces your visible phone number with a secure QR code for car notifications.</p>
+                    <a href="#signup" class="btn btn-primary">Get Your QR Code</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-image">
+                    <img src="qr-code-demo.png" alt="QRAlimy in action">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Privacy Protection</h3>
+                        <p>No more exposing your personal phone number on your windshield.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-qrcode"></i>
+                        <h3>Easy to Use</h3>
+                        <p>Simple QR code scanning for anyone who needs to contact you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Instant Notifications</h3>
+                        <p>Get alerts when someone scans your code, without revealing your number.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works seamlessly on all smartphones with any QR scanner app.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How QRAlimy Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Register Your Vehicle</h3>
+                            <p>Sign up for QRAlimy and register your vehicle details.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Get Your QR Code</h3>
+                            <p>We generate a unique QR code linked to your vehicle.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Place It On Your Windshield</h3>
+                            <p>Print and display your QR code where it's easily visible.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Receive Secure Notifications</h3>
+                            <p>When someone scans your code, you'll get a notification without revealing your number.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo">
+            <div class="container">
+                <h2>See It In Action</h2>
+                <div class="demo-content">
+                    <div class="demo-image">
+                        <img src="qr-scan-demo.gif" alt="QRAlimy scanning demo">
+                    </div>
+                    <div class="demo-text">
+                        <h3>Try Scanning This Demo QR Code</h3>
+                        <p>See how easy it is to send a notification without seeing a phone number.</p>
+                        <button id="show-qr-info" class="btn btn-secondary">More About QR Codes</button>
+                        <div id="qr-info" class="hidden-info">
+                            <p>Our QR codes are durable, weather-resistant, and work with any standard QR scanner app. They don't contain any personal information - just a unique identifier that connects to our secure notification system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup">
+            <div class="container">
+                <h2>Get Started with QRAlimy</h2>
+                <form id="parking-form" action="submit.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-make">Vehicle Make</label>
+                        <input type="text" id="vehicle-make" name="vehicle-make" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-model">Vehicle Model</label>
+                        <input type="text" id="vehicle-model" name="vehicle-model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="license-plate">License Plate</label>
+                        <input type="text" id="license-plate" name="license-plate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate My QR Code</button>
+                </form>
+                <div id="form-success" class="hidden">
+                    <h3>Thank you for signing up!</h3>
+                    <p>Your QR code is being generated. You'll receive an email with instructions shortly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Simple, Transparent Pricing</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">$4.99<span>/month</span></div>
+                        <ul>
+                            <li>1 Vehicle</li>
+                            <li>Unlimited Notifications</li>
+                            <li>Standard QR Code</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <a href="#signup" class="btn btn-secondary">Get Started</a>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Premium</h3>
+                        <div class="price">$7.99<span>/month</span></div>
+                        <ul>
+                            <li>Up to 3 Vehicles</li>
+                            <li>Unlimited Notifications</li>
+                            <li>Premium Durable QR Sticker</li>
+                            <li>Priority Support</li>
+                            <li>Custom Message Options</li>
+                        </ul>
+                        <a href="#signup" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Family</h3>
+                        <div class="price">$12.99<span>/month</span></div>
+                        <ul>
+                            <li>Up to 5 Vehicles</li>
+                            <li>Unlimited Notifications</li>
+                            <li>Premium Durable QR Stickers</li>
+                            <li>24/7 Priority Support</li>
+                            <li>Custom Branding Options</li>
+                            <li>Family Management Dashboard</li>
+                        </ul>
+                        <a href="#signup" class="btn btn-secondary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>QRAlimy</h3>
+                    <p>Protecting your privacy one QR code at a time.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@qralimy.com</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Privacy Ave, Tech City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 QRAlimy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
         </div>
-        <div class="card">
-          <h3>Share Instantly</h3>
-          <p>Send your business info with a single scan.</p>
-        </div>
-      </div>
-      <div id="extraInfo" class="hidden extra-info">
-        <p>Our service helps modern professionals connect instantly without sharing paper cards. Just scan and save!</p>
-      </div>
-      <button id="toggleExtra" class="btn-secondary">Show More</button>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Form Section -->
-  <section id="demo" class="form-section">
-    <div class="container">
-      <h2>Try It Out</h2>
-      <p>Enter your name and parking spot below:</p>
-      <form id="parkingForm" action="form-handler.php" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="spot">Parking Spot:</label>
-        <input type="text" id="spot" name="spot" required />
-
-        <button type="submit" class="btn-submit">Submit</button>
-      </form>
-
-      <div id="responseMessage"></div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 QRAlimy. Built with care by PARTH BHATIA  </p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
